@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <h:head>
+         <title>calculator</title>
+    </h:head>
+    <h:body>
+         <h:form>
+             <h:inputText id="name" value="#{calculator.a}" a:placeholder="Type number a" />
+               <h:inputText id="name2" value="#{calculator.b}" a:placeholder="Type number b" />
+                  <h:commandButton value="sum" action="#{calculator.add}" />
+                   <h:commandButton value="mul" action="#{calculator.multiply}" />
+                    <h:commandButton value="div" action="#{calculator.divide}" />
+                     <h:commandButton value="sub" action="#{calculator.subtract}" />
+                       <br/>
+                       <br/>
+                      Answer:
+          <h:outputText id="answer" value="#{calculator.answer}"/>
+        </h:form>
+     </h:body>
+</html>
